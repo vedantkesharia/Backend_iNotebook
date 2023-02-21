@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
-const mongoURI="mongodb://localhost:27017/firstdb/firstdb";
 
+//require("dotenv").config();
+//const new_uri = process.env.MONGO_URI;
+mongo_uri = "mongodb+srv://Vedant:tnadev1111@cluster0.ohbypjl.mongodb.net/inotebook?retryWrites=true&w=majority";
 const connectToMongo = ()=>{
-    mongoose.connect(mongoURI,()=>{
+    mongoose.connect(mongo_uri,()=>{
         console.log("Connected to Mongo successfully");
     })
 }
