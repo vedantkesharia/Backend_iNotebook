@@ -16,7 +16,7 @@ router.get('/fetchallnotes', fetchuser, async (req, res) => {
     }
 })
 //ROUTE 2: Add A New Note Using :POST "/api/notes/addnote".Doesnt require Auth
-router.get('/addnote', fetchuser, [
+router.post('/addnote', fetchuser, [
     body('title', 'Enter a valid title').isLength({ min: 3 }),
     body('description', 'Description must be atleast 5 characters').isLength({ min: 5 }),
 ], async (req, res) => {
