@@ -1,5 +1,6 @@
-const { default: userEvent } = require('@testing-library/user-event');
+// const { default: userEvent } = require('@testing-library/user-event');
 const express = require('express');
+// import express from 'express';
 const router = express.Router();
 var fetchuser = require('../middleware/fetchuser');
 const Note = require('../models/Note');
